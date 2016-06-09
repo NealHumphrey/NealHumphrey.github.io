@@ -1,0 +1,23 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Neal Humphrey
+email: humphrey.neal@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  I'm Neal. I love using data to understand the world, 
+  and helping others understand it too through great 
+  storytelling and visualization. I've run my own startup, 
+  built software tools, and simulated the energy use of 
+  all the buildings in the country.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://nhumphrey.com" # the base hostname & protocol for your site
+twitter_username: none
+github_username:  NealHumphrey
+
+# Build settings
+markdown: kramdown
