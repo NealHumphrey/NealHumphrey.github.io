@@ -265,7 +265,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Lora;
+  font-family: 'Hind';
   font-size: 18px;
   line-height: 1.428571429;
   color: #333333;
@@ -354,8 +354,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: Allerta;
-  font-weight: 500;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
   line-height: 1.1;
   color: inherit;
 }

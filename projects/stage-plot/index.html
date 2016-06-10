@@ -1,0 +1,50 @@
+---
+layout: home
+title: Stage Plot Tool
+---
+
+
+<h1>Stage Plot Tool</h1>
+      
+<p>An interesting tool I made so I could learn <a href="http://fabricjs.com/">Fabric.js</a> and Javascript in general. In <a href="https://flashband.org">Flashband</a> we were using Google Draw documents for our one-night bands to make stage plots. This is to replace that with a dedicated tool.</p>
+
+<p>Still a work in progress. When I finish it up it will go on the Flashband website. The 'Generate Output' and 'Load Input' boxes are to demo the save / reload functionality that will link to our database.</p>
+
+<hr>
+
+<h3 class="raspberry">Make a stage plot</h3>
+<p>Add a musician, update their name, then link amps and microphones to them.</p>
+
+<div id="canvasWrap">
+  <div class="row">
+  <div class="col-sm-2"><canvas id="prep" width="150" height="500" style= "border: 1px solid #d3d3d3;"></canvas></div>
+  <div class="col-sm-10"><canvas id="stage" width="650" height="500" style="border: 1px solid #d3d3d3;"></canvas></div>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-xs-2">
+    <a href="javascript:void(0)" class="btn btn-default" id="loadOutput">Generate Output</a>
+  </div>
+  <div class="col-xs-10">
+    <textarea style="width:650px" rows="4" id="outputArea"></textarea>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-xs-2">
+    <a href="javascript:void(0)" class="btn btn-default" id="loadInput">Load Input</a>
+  </div>
+  <div class="col-xs-10">
+    <textarea style="width:650px" rows="4" id="inputArea"></textarea>
+  </div>
+</div>
+
+<script src="js/fabric.js"></script>
+<script src="js/stagePlot.js"></script>
+
+<script src="js/jquery-ui.js"></script>

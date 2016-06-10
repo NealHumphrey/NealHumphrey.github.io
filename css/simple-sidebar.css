@@ -15,16 +15,16 @@
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-left: 200px;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    left: 200px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-left: -200px;
     overflow-y: auto;
 
     -webkit-transition: all 0.5s ease;
@@ -34,18 +34,18 @@
 }
 
 #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
+    width: 200px;
 }
 
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
+    padding: 0px;
 }
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    margin-right: -200px;
 }
 
 /* Sidebar Styles */
@@ -53,7 +53,7 @@
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 200px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -92,9 +92,9 @@
     background: none;
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) {      /*768*/
     #wrapper {
-        padding-left: 250px;
+        padding-left: 200px;
     }
 
     #wrapper.toggled {
@@ -102,7 +102,7 @@
     }
 
     #sidebar-wrapper {
-        width: 250px;
+        width: 200px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
@@ -119,3 +119,86 @@
         margin-right: 0;
     }
 }
+
+
+/*
+Easiest method of adapting sidebar to the regular .container class
+a close but not exact match: use col-sm-10 just under the container, meaning there is a "wasted" col-2 on the right (which can overflow the browser width)
+So that we get that usable space back at the largest size, we add one more container breakpoint that sizes everything up.
+If we want, we could add some col-xl-# classes to make grids work at this largest size - but only if needed....
+
+
+@media (min-width: 1400px) {    
+  .container {
+        width: 1365px;
+    }
+}
+
+
+*/
+
+/*Alternate method of adaptations to make the sidebar work with the regular .container class, instead of only .container-fluid.
+It's necessary to force the container div to shrink early - by the width of the sidebar. 
+Here it's done with padding, although this means each size step will actually have two scaled sizes 
+
+
+@media(min-width:768px) {
+    #container-sub-wrapper {
+        padding-right: 200px;
+    }
+}
+
+@media (min-width: 968px) { 
+  #container-sub-wrapper {
+        padding-right: 200px;
+    }
+}
+
+@media (min-width: 1192px) {  
+  #container-sub-wrapper {
+        padding-right: 200px;
+    }
+}
+@media (min-width: 1400px) {   
+  #container-sub-wrapper {
+        padding-right: 0px;
+    }
+}
+
+*/
+
+/*copied from bootstrap for reference
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;   col-3 = 242.5  |  col-2 = 162
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;  col-3 = 292.5  | col-2 = 195
+  }
+}
+
+
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+
+*/

@@ -1,53 +1,6 @@
 
 
-/*stuff for sidebar nav*/
-#sidebar {
-  height: 100%;
-  padding-right: 0;
-  padding-top: 20px;
-}
-#sidebar .nav {
-  width: 95%;
-}
-#sidebar li {
-  border:0 #f2f2f2 solid;
-  border-bottom-width:1px;
-}
-
-/* collapsed sidebar styles */
-@media screen and (max-width: 767px) {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
-  }
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -41.6%;
-  }
-
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -41.6%;
-  }
-  .row-offcanvas-right.active {
-    right: 41.6%;
-  }
-  .row-offcanvas-left.active {
-    left: 41.6%;
-  }
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 41.6%;
-  }
-  #sidebar {
-    padding-top:0;
-  }
-}
-
-
+/* no longer used??*/
 .color-primary-0 { color: #4E9BB5 }	/* Main Primary color */
 .color-primary-1 { color: #CDEDF8 }
 .color-primary-2 { color: #84C6DC }
@@ -66,9 +19,15 @@
 .color-secondary-2-3 { color: #E93E3E }
 .color-secondary-2-4 { color: #A31A1A }
 
+/*new theme colors based on shirt*/
+.purple-1 { color:#51517E; } /*rgb(81,81,126)*/
+.purple-2 { color:#7484BD; } /*rgb(116,132,189)*/
+.purple-3 { color:#85A3d3; } /*rgb(133,163,211)*/
+.raspberry {color:#9c5a74; } /*rgb(156,90,116)*/
+.algae-1 { color:#83A35F; }  /*rgb(131,163,95)*/
 
 
-
+/*extra div and similar formatting for general purpose use*/
 .box-shadow--2dp {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
 }
@@ -88,7 +47,9 @@
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
 }
 
-
+.margin-bottom {
+  margin-bottom: 50px;
+}
 
 
 .project-thumb {
@@ -97,17 +58,36 @@
   height: 140px;
   width: 100%;
   padding: 0%;
-  margin: 0 auto;
+
+  margin-top: 10px;
   background:none;
   overflow: hidden;
 }
 
+/*by default we align to the top left corner*/
 .project-thumb img {
-  vertical-align: bottom;
-  overflow: hidden;
   width: 100%;
   margin: 0;
   height: auto;
+}
+
+/*add these classes if needed*/
+.img-center-align {
+  position:relative;
+  z-index: -1;
+  top:100%;
+  transform: translateY(-100%);
+   -webkit-transform: translateY(-100%);
+   -ms-transform: translateY(-100%);
+}
+
+.img-bottom-align {
+  position:relative;
+  z-index: -1;
+  top:100%;
+  transform: translateY(-100%);
+   -webkit-transform: translateY(-100%);
+   -ms-transform: translateY(-100%);
 }
 
 /*
@@ -116,15 +96,15 @@ text-align: center;
 */
 
 /* OVERLAY CONTENT */
+
 .project-thumb .overlay {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   float:left;
-
-  background-color:rgba(0, 0, 0, 0.3);
- 
+  
+  background-color:rgba(0, 0, 0, 0.15);
   text-shadow:none;
   color: white;
   -webkit-transition: background-color 0.3s;
@@ -134,11 +114,48 @@ text-align: center;
   
 }
 
+
 .project-thumb .overlay:hover {
   background-color:rgba(0, 0, 0, 0.5);
 }
 
-.project-thumb .overlay h3 {
+/*ovverlay colors override background-color only - need to use both overlay and overlay-color on a class*/
+.project-thumb .overlay-purple {
+  background-color: rgba(116,132,189,0.4)
+}
+.project-thumb .overlay-purple:hover {
+  background-color: rgba(116,132,189,0.6);
+}
+
+.project-thumb .overlay-raspberry {
+  background-color: rgba(156,90,116,0.4)
+}
+.project-thumb .overlay-raspberry:hover {
+  background-color: rgba(156,90,116,0.6);
+}
+
+.project-thumb .overlay-algae {
+  background-color: rgba(131,163,95,0.4)
+}
+.project-thumb .overlay-algae:hover {
+  background-color: rgba(131,163,95,0.6);
+}
+
+
+ /*purple 1:  rgb(81,81,126)*/
+ /*purple 2:  rgb(116,132,189)*/
+ /*purple 3:  rgb(133,163,211)*/
+ /*raspberry: rgb(156,90,116)*/
+ /*algae:     rgb(131,163,95)*/
+
+
+
+
+
+.project-thumb .overlay h2,
+.project-thumb .overlay h3,
+.project-thumb .overlay h4,
+.project-thumb .overlay h5 {
   position:absolute;
   top: 50px;
   color:#fff;
@@ -167,4 +184,16 @@ text-align: center;
 .row.ten-gutter [class*='col-']:not(:last-child) {
   padding-right: 5px;
   padding-left: 5px;
+}
+
+
+
+/*page specific stuff*/
+.wide-bg {
+   background-image: url(/img/look-left-1920.jpg);
+   background-size:cover;
+   background-position: 48% 50%;
+   min-height:250px;
+   width:100%;
+   position:absolute;
 }
