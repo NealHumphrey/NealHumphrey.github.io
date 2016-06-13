@@ -1,3 +1,10 @@
+---
+layout: home
+title: NHumphrey.com
+---
+
+
+
 NHumphrey.com
 =============
 
