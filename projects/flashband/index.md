@@ -8,7 +8,7 @@ title: Flashband
 Flashband
 =========
 
-When I first started [Flashband](https://flashband.org), my band had just broken up and I was looking for a new way to meet musicians. Flashband was the solution I came up with. With two co-founders, I built a website and hosted a ton of local events. We recruited 2,000+ musicians to join, and in 2015 we closed a round of seed-investment funding. At our peak we had 3 people full-time and a couple part-time. 
+When I first started [Flashband](https://flashband.org), my band had just broken up and I was looking for a new way to meet musicians. Flashband was the solution I came up with. With two co-founders, I built a website and hosted a ton of local events. We recruited 2,000+ musicians to join, and in 2015 we closed a round of seed investment funding. At our peak we had 3 people full-time and a couple part-time. 
 
 We ended active operations in 2016 because, well, music is a tough business. I wrote [an article](https://flashband.org/resources/news/rebooted) to our community summarizing the decision and our next steps at the time. 
 

@@ -16,19 +16,19 @@ Check it on and download on the [SEAD Website](http://superefficient.org/sltool)
 ------------------------------------------
 
 
-<div class="col-sm-4">
+<div class="col-sm-4 margin-bottom">
 	<a href="http://superefficient.org/sltool" target="_blank">
 	    <img class="box-shadow--4dp" src="/img/sead-1.jpg" width="100%">
     </a>
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-4 margin-bottom">
 	<a href="http://superefficient.org/sltool" target="_blank">
 	    <img class="box-shadow--4dp" src="/img/sead-2.jpg" width="100%">
     </a>
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-4 margin-bottom">
 	<a href="http://superefficient.org/sltool" target="_blank">
 	    <img class="box-shadow--4dp" src="/img/sead-3.jpg" width="100%">
 	</a>

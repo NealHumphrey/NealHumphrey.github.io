@@ -197,3 +197,9 @@ text-align: center;
    width:100%;
    position:absolute;
 }
+
+
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
