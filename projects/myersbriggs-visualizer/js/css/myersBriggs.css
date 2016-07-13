@@ -1,0 +1,376 @@
+
+
+#reportWrapper p {
+	font-size:1.5em;
+}
+
+/*Allow boxes with text in SVG sections to hover correctly*/
+text {
+ pointer-events: none;
+}
+
+
+/*This is for the line graph*/
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.x.axis path {
+	display: none;
+}
+
+.line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 1.5px;
+}
+
+/*This is for the starburst graph*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	background-color: #fff;
+}
+
+#sidebar {
+ 
+	width: 100px;
+}
+
+#sequence {
+	height: 70px;
+}
+
+#legend {
+	padding: 10px 0 0 3px;
+}
+
+#sequence text, #legend text {
+	font-weight: 600;
+	fill: #fff;
+}
+
+#chart {
+	position: relative;
+}
+
+#chart path {
+	stroke: #fff;
+}
+
+#explanation {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 100px;
+	text-align: center;
+	color: #666;
+	z-index: 1;
+}
+
+#percentage {
+	font-size: 2.5em;
+}
+
+
+.background-box{
+	border-radius: 5px;
+	padding-left:5px;
+	padding-right:5px;
+	opacity:0.6;
+}
+
+
+/*Colors for each type*/
+/*Extrovert*/
+.E-color {
+	fill: #46aace;
+}
+span.E-color, div.E-color {
+	background-color:#46aace;
+}
+.E-stroke {
+	stroke: #46aace;
+	stroke-width:4;
+}
+
+/*Introvert*/
+.I-color {
+	fill: #2a5599;
+	transition: fill 5000ms;
+}
+span.I-color, div.I-color {
+	background-color:#2a5599;
+	color:#ffffff;
+}
+.I-stroke {
+	stroke: #2a5599;
+	stroke-width:4;
+}
+
+/*Sensing*/
+.S-color {
+	fill: #f5b857;
+	transition: fill 5000ms;
+}
+span.S-color, div.S-color {
+	background-color:#f5b857;
+}
+.S-stroke {
+	stroke: #f5b857;
+	stroke-width:4;
+}
+
+
+/*iNtuitive*/
+.N-color {
+	fill: #e25328;
+}
+span.N-color, div.N-color {
+	background-color:#e25328;
+	color:#ffffff;
+}
+.N-stroke {
+	stroke: #e25328;
+	stroke-width:4;
+}
+
+
+/*Thinking*/
+.T-color {
+	fill: #6ab759;
+	transition: fill 5000ms;
+}
+span.T-color, div.T-color {
+	background-color:#6ab759;
+}
+.T-stroke {
+	stroke: #6ab759;
+	stroke-width:4;
+}
+
+
+/*Feeling*/
+.F-color {
+	fill: #004d38;
+	transition: fill 5000ms;
+}
+span.F-color, div.F-color {
+	background-color:#004d38;
+	color:#ffffff;
+}
+.F-stroke {
+	stroke: #004d38;
+	stroke-width:4;
+}
+
+/*Judging*/
+.J-color {
+	fill: #f19b9c;
+	transition: fill 5000ms;
+}
+span.J-color, div.J-color {
+	background-color:#f19b9c;
+
+}
+.J-stroke {
+	stroke: #f19b9c;
+	stroke-width:4;
+}
+
+/*Perceiving*/
+.P-color {
+	fill: #a73b8f;
+}
+span.P-color, div.P-color {
+	background-color:#a73b8f;
+	color:#ffffff;
+}
+.P-stroke {
+	stroke: #a73b8f;
+	stroke-width:4;
+}
+
+
+
+/*typeBox chart styles*/
+
+.type-description {
+	position: absolute;
+	visibility: hidden;
+}
+
+.subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: italic;
+	background-color: #fff;
+	color: #708090;
+}
+
+/*Grid styles*/
+.typeBox {
+	fill: #dddddd;
+	stroke-width: 1;
+	stroke: #a8a8a8;
+	stroke-opacity: ;
+	rx: 3px;
+	ry: 3px;
+}
+
+.typeBox:hover {
+	fill: #aaaaaa; /*overriden by js*/
+	stroke: #828282;
+}
+.type-label {
+	color: #4d4d4d;
+	font-size: 18px;
+}
+
+.type-count {
+	color: #4d4d4d;
+	font-size: 14px;
+}
+
+
+/*ScatterBar Styles*/
+
+
+/*make sure nested absolute position divs are relative to the scatterBar area*/
+#scatterBarWrapper {
+	position: relative;
+}
+
+#scatterBarWrapper p {
+	font-size:1.5em;
+}
+
+.preferenceDescription {
+	max-width:800px;
+
+}
+
+/*Allow description divs to be located relative to the scatterBarWrapper
+  In reality, the 'top' attribute will be overridden with Javascript/D3*/
+#preference2Description {
+	position:absolute;
+	left: 0px;
+	top:200px;
+}
+
+#preference3Description {
+	position:absolute;
+	left: 0px;
+	top:300px;
+}
+
+#preference4Description {
+	position:absolute;
+	left: 0px;
+	top:400px;
+}
+
+#preference1Description {
+	position:absolute;
+	left: 0px;
+	top:500px;
+}
+
+.hide {
+	opacity:0;
+	visibility: hidden;
+
+	transition: visibility 0s 2s, opacity 2s linear;
+}
+.reveal {
+	opacity:1;
+	visibility: visible;
+	
+	transition: opacity 2s linear;
+}
+
+
+/*Labels for the scatterBar sections (left and right)*/
+.percentLabel {
+	fill: 	#303030;
+	font-size: 36px;
+}
+.preferenceLabel {
+	fill: 	#303030;
+	font-size: 1.5em;
+}
+.summaryLabel{
+	fill: #707070;
+	font-size: 1em;
+}
+
+.person {
+	/*nothing special*/
+}
+
+.person-shadow{
+	opacity:1.0;
+}
+
+
+
+.d3-tip {
+  line-height: 1;
+  font-weight: normal;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  color: rgba(96,96,96,1);
+  border-radius: 5px;
+  border-color: rgba(0,0,0,0.8);
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0,0,0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+  border-color: rgba(255,255,255,0.8);
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.d3-tip .tip-name {
+	font-size: 16px;
+	text-align: center;
+}
+
+.d3-tip .tip-type {
+	font-size: 18px;
+	text-align: center;
+}
+
+.continueWrapper {
+	display:flex;
+	justify-content:center;
+}
+
+.down-arrow {
+	left:50%;
+	margin-top:20px;
+	height: 20px;
+	fill: #707070;
+}

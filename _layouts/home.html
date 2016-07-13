@@ -3,6 +3,8 @@
 <meta charset="utf-8">
 <header>
 	{% include header-includes.html %}
+	{{page.css}}
+
 	<title>{{ page.title }}</title>
 
 </header>
@@ -38,6 +40,7 @@
 
 <!--.sitewide includes-->
 {% include footer-includes.html %}
+{{page.javascript}}
 <!--page specific includes-->
 	<!--none-->
 <!--.page specific includes-->

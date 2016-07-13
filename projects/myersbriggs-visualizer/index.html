@@ -1,0 +1,116 @@
+---
+layout: home
+title: Neal Humphrey
+javascript: <script src="//d3js.org/d3.v3.min.js"></script><script type="text/javascript" src="myersBriggs.js"></script><script type="text/javascript" src="js/d3-tip.js"></script>
+css: <link rel="stylesheet" type="text/css" href="css/myersBriggs.css"><link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+---
+
+
+<style>
+
+</style>
+
+  	<div class="col-xs-12 col-sm-12">
+	  <div class="row">
+		<h3>Myers Briggs Team Report</h3>
+		<p>This tool uses <a href="d3js.org">D3</a> to show the distribution of Myers Briggs personality types across a team or organization.</p>
+		<p>While there are descriptions of what each component means, it's not intended to be a completely stand-alone reference - team members would be directed to this report after completing a group workshop with their team or organization, and would use this to further explore how the personality types might impact their team. I developed this for my wife to use in her organizational development consulting business (<a href="http://www.ssquared.org/">S-Squared</a>).
+
+		<p>This is set up with fake (sample) data. A caveat - this hasn't been designed to be mobile friendly, so requires zooming on mobile devices.</p>
+
+		<hr>
+
+		<div id="reportWrapper">
+		<h4>The 'A-team' Myers Briggs Report</h4>
+		<p>Use this page to refresh yourself on the meanings of each of the preferences and to explore the breakdown of your team's personality types. As you do so, pay attention to your own personality type and when you are similar or different from your teammates. Pay particular attention if the team leans strongly to one preference - you may need to work harder to incorporate other viewpoints in your work and avoid alienating minority teammember.</p>
+
+			<!--moving-scatter-bar-->
+			<div id="scatterBarWrapper" class="hidden" >
+				<div class="row">
+				<div class="col-sm-12">
+					<div id="scatterBar" ></div>
+				</div>
+					<div id="preference2Description" class="col-xs-12 preferenceDescription hide">
+						<h3><span class="N-color background-box">iNtuitive</span> or <span class="S-color background-box">Sensing</span></h3>
+						<p>This preference describes how a person collects information about the world. Those with a Sensing (S) preference tend to focus on concrete, directly observable facts and interpret these literally. Intuitive (N) people instead focus on how things fit into the big picture, using theories and insight to describe what they see. Asked what time it is, an S might say "3:47" while an N would say "It's late!"</p>
+						<div class="continueWrapper">
+							<button class="btn" id="loadPreference3">
+								<i class="fa fa-arrow-down"></i> Continue</span>
+							</button>
+						</div>
+					</div>
+
+
+					<div id="preference3Description" class="col-xs-12 preferenceDescription hide">
+						<h3><span class="
+						F-color background-box">Feeling</span> or <span class="T-color background-box">Thinking</span></h3>
+						<p>This preference describes how a person makes decisions based on the information they collect about the world. Thinkers (T) tend to be objective and make their decisions based on logic and calculations. Feelers (F), in contrast, focus on the emotional impact of their decisions, both themselves and others.</p>
+						<div class="continueWrapper">
+							<button class="btn" id="loadPreference4">
+								<i class="fa fa-arrow-down"></i> Continue</span>
+							</button>
+						</div>
+					</div>
+
+
+					<div id="preference4Description" class="col-xs-12 preferenceDescription hide">
+						<h3><span class="J-color background-box">Judging</span> or <span class="P-color background-box">Perceiving</span></h3>
+						<p>As we saw in the last two preferences, everyone collects data (N/S) and makes decisions (F/T). This preference indicates which of these processes a person emphasizes and shows to the world. Perceivers (P) tend to talk about their data collection process, and like to keep their options open as long as they can. J's tend to keep information collection in their head, and talk about decisions. They prefer decisivness and clarity.</p>
+
+						<div class="continueWrapper">
+							<button class="btn" id="loadPreference1">
+								<i class="fa fa-arrow-down"></i> Continue</span>
+							</button>
+						</div>
+					</div>
+
+					<div id="preference1Description" class="col-xs-12 preferenceDescription hide">
+						<h3><span class="E-color background-box">Extrovert</span> or <span class="I-color background-box">Introvert</span></h3>
+						<p>This preference describes where a person gets their <i>energy</i>. Extroverts get their energy from the outside world, and are energized by interacting with it. Introverts (I) get energy from reflection and thinking.</p>
+
+						<div class="continueWrapper">
+							<button class="btn" id="loadTypeGrid">
+								<i class="fa fa-arrow-down"></i> Continue</span>
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+			<!--typeGrid graphic-->
+			<div id="gridWrapper" class="hidden" style="position:relative;">
+				<h4>Type Grid Summary</h4>
+				<div id="typeGrid"></div>
+			</div>
+
+
+
+
+			<!--The starburst chart - currently removed-->
+			<div class="col-sm-12">
+			<div id="sequence"></div>
+			<div id="starWrapper" style="position:relative;">
+			<div id="starChart">
+				<div id="explanation" style="visibility: hidden;">
+					<span id="percentage"></span><br/>
+					<span id="percentage-description">
+						of people are this type
+					</span>
+					<span id="percentage-type">
+					<!--future use - update type here live-->
+					</span>
+
+				</div>
+			</div>
+			</div>
+			</div>
+
+			<div class="clearfix"></div>
+	</div><!--.reportWrapper-->
+</div><!--.row-->
+</div><!--.col-xs-12-->
+
+
