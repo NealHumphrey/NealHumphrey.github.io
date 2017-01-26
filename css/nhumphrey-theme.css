@@ -684,7 +684,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Inconsolata;
+  font-family: monospace;
 }
 code {
   padding: 2px 4px;
@@ -5768,4 +5768,3 @@ button.close {
     display: none !important;
   }
 }
-   

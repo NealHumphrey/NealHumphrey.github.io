@@ -9,10 +9,10 @@
 title: Neal Humphrey
 email: humphrey.neal@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm Neal. I love using data to understand the world, 
-  and helping others understand it too through great 
-  storytelling and visualization. I've run my own startup, 
-  built software tools, and simulated the energy use of 
+  I'm Neal. I love using data to understand the world,
+  and helping others understand it too through great
+  storytelling and visualization. I've run my own startup,
+  built software tools, and simulated the energy use of
   all the buildings in the country.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nhumphrey.com" # the base hostname & protocol for your site
@@ -21,3 +21,5 @@ github_username:  NealHumphrey
 
 # Build settings
 markdown: kramdown
+
+highlighter: rouge
