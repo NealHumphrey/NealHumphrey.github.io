@@ -1,6 +1,7 @@
 ---
-layout: home
+layout: clean
 title: Git
+
 ---
 
 

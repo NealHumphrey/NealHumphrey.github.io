@@ -1,11 +1,16 @@
 ---
-layout: home
+layout: clean
 title: Git Workflow
 ---
 
 
 # Practical Git Checklist for First Time Git Team Members
 If you're just getting into Git, it  can be confusing. This is a step-by-step checklist that can be used by a new person to know exactly what commands they need to type to use Git during a normal coding session. Follow this from when you sit down to code and just want to start on some new work, using your team mates most recent code as your starting point. This assumes you are using a branching model where every person works only on their own branches (i.e. 2 people never edit the same branch), and then merge their changes into a single central branch via pull requests.
+
+**Triangular Workflow Note**: If you are using a triangular workflow (you pull from one Github repository to get the latest changes, but you push to a different copy i.e. your fork), you need to make one change in the below commands. Instead of using `origin` when you fetch and merge new changes into dev, instead use the name of your remote repository (e.g. `upstream` or `codefordc`). 
+
+--------------------------------------------------------------------
+
 
 1. **Are you in your project folder?**
    a. Yes (e.g. `C:\Users\Documents\MyCoolRepo>`) --> go to 2.
@@ -25,14 +30,15 @@ If you're just getting into Git, it  can be confusing. This is a step-by-step ch
                     * `git commit` to make a commit on your new branch.
                     * `git checkout master` (or `git checkout dev`, depending on your team)
             * No -->
-                * `git reset --hard` **Warning** this deletes the changes you've made to the files. Only do it if you actually want to throw away your changes (i.e. if you broke something).  Everything that's been committed is still accessible.
+                * `git reset --hard` **Warning** this deletes the changes you've made to the current files. Only do it if you actually want to throw away your changes (i.e. if you broke something).  Everything that's been committed is still accessible.
+                * `git clean` **Warning** This one deletes any new files that have been created. Reset only deals with files that were edited/removed, clean only deals with files that were added. 
     2. No (your command line output will say "nothing to commit, working tree clean")
         * What branch are you on? (your command line output will say "On branch my-branch-name" on the first line)
             * The shared branch (e.g. `master`) --> all good!
             * My feature branch (e.g. `cool-branch`) --> `git checkout master` (or `git checkout dev`, depending on your team)
 3. Double check your work -> `git status` should reveal "On branch master" or "On branch dev", and "nothing to commit, working tree clean". If not, try above steps again.
-4. `git fetch origin master` or `git fetch origin dev` to get the latest changes from Github.
-5. `git merge origin\master` or `git merge origin\dev` - make your local copy of master match Github's copy
+4. `git fetch origin master` or `git fetch origin dev` to get the latest changes from Github. (If you are using a triangular workflow, use `git fetch nameofotherremote dev`)
+5. `git merge origin\master` or `git merge origin\dev` - make your local copy of master match Github's copy. (If you are using a triangular workflow, use `get merge nameofotherremote\dev`)
 6. Get ready to do your work: make a new branch starting from the most recent copy
     * Type `git branch my-branch-name`
     * `git checkout my-branch-name`
@@ -42,6 +48,6 @@ If you're just getting into Git, it  can be confusing. This is a step-by-step ch
     * Double check - `git status` should reveal "On branch my-branch-name" and a list of all the files you've edited.
     * `git add -A`
     * `git commit`
-    * `git push -u origin my-branch-name`
+    * `git push -u origin my-branch-name` ([read about -u](http://stackoverflow.com/questions/6089294/why-do-i-need-to-do-set-upstream-all-the-time))
 
 10. Go to Github.com and go to Pull Requests. To ask your team mates to add your new changes to the central branch (`dev` or `master`), you can make a new pull request to do so.
