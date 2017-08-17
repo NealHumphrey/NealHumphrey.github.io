@@ -59,7 +59,7 @@ That brings us to using an object-oriented approach; Mike Bostock even points th
 
 True, but a small tradeoff for usability (and if you're not confident in how to manage `this`, the [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/tree/master/this%20%26%20object%20prototypes) series on the topic is a great starting point). 
 
-Choosing a structure for object inheritance inspires strong feelings all around - there's really no best choice as every approach involves tradeoffs. Knowing I wanted to use this structure long term, I wanted to make the right choice. After a too-long trip down that particular research rabbit hole, I ended up going with a [delegation pattern](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch6.md). It seemed like a more natural use of Javascript's lack of classes, though it's less common and relies on the ES5 `Object.create()`. It looks like this:
+Choosing a structure for object inheritance inspires strong feelings all around - there's really no best choice as every approach involves tradeoffs.  John had set up our first version using prototypical inheritance and so we used that for a while. Knowing I wanted to use this structure long term, I wanted to make the right choice. After a too-long trip down that particular research rabbit hole, I ended up going with a [delegation pattern](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch6.md). It seemed like a more natural use of Javascript's lack of classes, though it's less common and relies on the ES5 `Object.create()`. It looks like this:
 
 {% highlight javascript %}
 var baseChart =  {
