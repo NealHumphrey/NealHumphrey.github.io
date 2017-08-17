@@ -1,0 +1,8 @@
+
+
+### Core Principles
+
+* The base chart should provide a fundamental design pattern that works for nearly all charts
+* Charts should be able to build on each other, reusing code as much as possible
+* There's no such thing as a one-off chart
+* This is a library for people that want to use D3, not those that want to avoid learning it.
