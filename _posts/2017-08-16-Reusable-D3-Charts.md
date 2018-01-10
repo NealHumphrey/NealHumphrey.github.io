@@ -1,11 +1,11 @@
 ---
-layout: clean
-title:  "Reusable D3 charts"
+layout: blog_post
+author: Neal Humphrey
+title:  "Reusable D3 Charts and Launching D3 Boilerplate"
 date:   2017-08-16
 categories: javascript d3 web-development
 permalink: /blog/:year/:title/
 ---
-# Reusable D3 Charts and Launching D3 Boilerplate
 
 Lately I've been working on making D3 charts more reusable. In particular, I wanted a structure that I could use when I started any new chart that would naturally lead to an elegant code design and so that I wouldn't need big code refactors when I (inevitably) wanted to add features like resizability. This mostly developed during my work on the [Housing Insights](http://housinginsights.org) project. [John Osterman](https://github.com/ostermanj) and I worked on a few permutations and settled on a structure that I think works well. I'm pulling this out into its own open source project because I think it has a lot of potential for making D3 charts easier for future projects and other developers - I'm launching this as [D3 Boilerplate](https://github.com/NealHumphrey/d3-boilerplate).
 
@@ -232,7 +232,7 @@ Finally, let's see an example in action. Click the chart to see its resize and u
 
 </script>
 
-
+<h3>Code to create this chart:</h3>
 {% highlight javascript %}
 var data = [{"myLabel":"A","percent":0.8}];
 

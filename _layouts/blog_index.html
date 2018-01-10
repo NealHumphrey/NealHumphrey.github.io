@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<header>
+    {% include header-includes.html %}
+    {{page.css}}
+
+    <title>{{ page.title }}</title>
+<meta name="google-site-verification" content="-nB0dzlv96sTsMmzXliFEFiHdP0Ak1h1riFqvCAmQ4w" />
+</header>
+
+
+<!--Optional on-page styles-->
+<style>
+
+</style>
+
+
+
+<!--Main body of the content here-->
+<body>
+    <!--<div id="background-banner" class="wide-bg"></div>-->
+    {% include navbar-start.html %}
+        
+        <!--main body-->
+        <div class="container">
+
+            <div class="row">
+            <div class="col-xs-12 col-sm-10"><!--id="container-sub-wrapper"-->
+            
+            {{content}}
+            
+
+            </div>
+            </div>
+        </div>
+
+    {% include navbar-close.html %}
+
+
+<!--.sitewide includes-->
+{% include footer-includes.html %}
+{{page.javascript}}
+<!--page specific includes-->
+    <!--none-->
+<!--.page specific includes-->
+
+</body>
+
+</html>
