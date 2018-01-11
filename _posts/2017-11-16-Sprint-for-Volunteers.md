@@ -53,8 +53,8 @@ Spending a month or more just planning the design of a product seems slow and ev
 ## Resources
 - [Google Ventures Design Sprint](http://www.gv.com/sprint/)
 - [The meeting canoe](http://axelrodgroup.com/meeting-canoe/) is a great reminder of what every meeting (or design session!) should include.
-- The [previous post](https://example.com) talked about conducting user interviews and user involvement generally. 
-- The [final post](https://example.com) in this series talks about getting volunteers up and working quickly by reducing the time to hello world.
+- The [previous post]({{site.baseurl}}{% link _posts/2017-11-15-User-Input-in-Civic-Tech.md %}) talked about conducting user interviews and user involvement generally. 
+- The [final post]({{site.baseurl}}{% link _posts/2017-11-17-Reducing-Time-to-Hello-World.md %}) in this series talks about getting volunteers up and working quickly by reducing the time to hello world.
 
 
 *The Civic Tech and Data Collaborative is a partnership of Code for America, Living Cities, and the National Neighborhood Indicators Partnership and is supported by the John D. and Catherine T. MacArthur Foundation. The national organizations are working with seven communities around the country to understand how to harness the power of data and technology to increase efficiency, equity, and effectiveness in order to benefit the most vulnerable residents in our urban communities.*
