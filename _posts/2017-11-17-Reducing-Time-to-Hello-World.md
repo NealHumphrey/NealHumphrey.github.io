@@ -7,7 +7,7 @@ categories: web-development project-management
 permalink: /blog/:year/:title/
 excerpt: One of the unique elements of the Housing Insights project is that the software developers, data analysts and designers working on the project are volunteers. This is true of all projects at Code for DC and many Code for America brigades, but it’s not a common setup for a tech project. Most successful volunteers end up committing 5+ hours per week for a month or more. In software development, though, even 20 hours is a small amount and it can easily evaporate. When your most committed volunteers only have 4-5 hours/week to give to the project, reducing overhead time of configuration, learning the code base, and deciding what to do really pays off.
 ---
-Cross-posted from [Medium](https://medium.com/@neal_humphrey/reducing-time-to-hello-world-d204b6f8326d)
+Cross-posted [on Medium](https://medium.com/@neal_humphrey/reducing-time-to-hello-world-d204b6f8326d)
 
 *This post is part of a series documenting lessons learned while I was the project manager of Housing Insights, a website that provides data about subsidized affordable housing for policy makers in DC. I was hired to work on the project for 20-30 hours per week, primarily managing the group of 40+ volunteers that contributed to the project. Read [part 1]({{site.baseurl}}{% link _posts/2017-11-15-User-Input-in-Civic-Tech.md %}) and [part 2]({{site.baseurl}}{% link _posts/2017-11-16-Sprint-for-Volunteers.md %}).*
 

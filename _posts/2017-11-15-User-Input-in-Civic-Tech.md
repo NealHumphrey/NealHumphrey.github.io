@@ -7,6 +7,7 @@ categories: web-development project-management
 permalink: /blog/:year/:title/
 excerpt: It’s easy to build a website that no one uses. First, you hear about a problem - either something you see in the world, or something someone working in the world tells you about. You say to yourself - “Tech can solve this!” You sit down, draw up a plan, and then start coding. Several short months later, you release your software/tool/website/tech solution to the world, eager for accolades. Then, nothing happens.
 ---
+Cross posted [on Medium](https://medium.com/@neal_humphrey/user-input-in-civic-tech-c167f0e765ec)
 
 *This post is part of a series documenting lessons learned while I was the project manager of Housing Insights, a website that provides data about subsidized affordable housing for policy makers in DC. I was hired to work on the project for 20-30 hours per week, primarily managing the group of 40+ volunteers that contributed to the project. Read [part 2]({{site.baseurl}}{% link _posts/2017-11-16-Sprint-for-Volunteers.md %}) and [part 3]({{site.baseurl}}{% link _posts/2017-11-17-Reducing-Time-to-Hello-World.md %}).*
 
@@ -26,7 +27,7 @@ Even though I started the process knowing user input was critical to our design 
 
 After we had a testable first version of our tool, our focus shifted to user testing - an equally important part of the process. We ended up doing 3 rounds of user testing, one using a fake tool (a clickable mockup) and two using real drafts of the actual website. But here again, do as many as you can and more than you expect to. 
 
-“Design with, not for” is such an important principle to civic tech that Code for DC even has it included in their code of conduct (http://codefordc.org/resources/codeofconduct.html). But it’s often hard to do that - what is with? how often do you involve users? When are you ready to start building? Hopefully this post shares some lessons that you can use in your next civic tech project. 
+“Design with, not for” is such an important principle to civic tech that Code for DC even has it included in their [code of conduct](http://codefordc.org/resources/codeofconduct.html). But it’s often hard to do that - what is with? How often do you involve users? When are you ready to start building? Hopefully this post shares some lessons that you can use in your next civic tech project. 
 
 # Resources
 - The [next post]({{site.baseurl}}{% link _posts/2017-11-16-Sprint-for-Volunteers.md %}) in this series talks about adapting the design sprint process to a volunteer group.
