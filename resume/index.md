@@ -24,4 +24,6 @@ title: Resume - Neal Humphrey
 </div>
 
 
+### Code Samples
 
+For real world examples of code I've written in both Javascript (front-end) and Python(back-end and machine learning), check out [my code samples page]({{ site.baseurl }}/resume/codesamples/).
