@@ -1,0 +1,107 @@
+/* General item styling */
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Carousel container */
+  .carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  /* Carousel item */
+  .carousel img {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+  
+  /* Hide scrollbar */
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Fullscreen image styling */
+  .item img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+  }
+  
+  /* Positioning for navigation buttons */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  
+  /* Overlay styling */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105px; /* Slightly larger than the icon sizes */
+    background-color: rgba(255, 255, 255, 0.75); /* White with 50% opacity */
+    z-index: 1;
+  }
+  
+  /* Icon styling */
+  .icon {
+    position: absolute;
+    top: 15px;
+    font-size: 75px;
+    z-index: 2;
+    padding: 15px;
+  }
+  
+  .heart-icon {
+    left: 15px;
+    color: rgb(224, 194, 0); 
+  }
+  
+  .cart-icon {
+    right: 15px;
+    color: rgb(224, 194, 0); 
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  /* Price styling */
+  .price {
+    position: absolute;
+    color: rgb(224, 194, 0); 
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 75px;
+    z-index: 2;
+    padding: 15px;
+  }
