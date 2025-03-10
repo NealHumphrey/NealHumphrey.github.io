@@ -8,11 +8,12 @@
   position: sticky;
   top: 0;
   transition: top 0.3s;
+  height:100px;
   z-index: 1000; /* Ensure the navbar is above other content */
 }
 
 .logo {
-  font-size:2em;
+  font-size:4em;
   font-weight: bold;
 }
 
@@ -25,7 +26,7 @@
 }
 
 .cart-icon {
-  font-size: 24px;
+  font-size: 40px;
 }
 
 /* General item styling */
@@ -138,4 +139,32 @@
     font-size: 75px;
     z-index: 2;
     padding: 15px;
+  }
+
+
+  .carousel-indicators {
+    text-align: center;
+    margin-bottom: 30px;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px; /* Slightly larger than the icon sizes */
+
+    z-index: 1;
+  }
+  
+
+  .indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  
+  .indicator.active {
+    background-color: #757575;
   }
