@@ -1,3 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.logo {
+  font-size:2em;
+  font-weight: bold;
+}
+
+.logo-the {
+  color: black;
+}
+
+.logo-hunt {
+  color: gold;
+}
+
+.cart-icon {
+  font-size: 24px;
+}
+
 /* General item styling */
 .item {
     border: 1px solid #ccc;
@@ -9,7 +39,7 @@
   }
   
   .item-name {
-    font-size: 1.75em;
+    font-size: 2em;
     height:100px;
   }
   /* Carousel container */
